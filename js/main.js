@@ -6,10 +6,19 @@ window.onload = () => {
 };
 let time_one = 0;
 let time_two = 0;
-
+let nomeTimeOne = "";
+let nomeTimeTwo = "";
 const view = () => {
-  document.getElementById("time_one").innerHTML = "Pontuação Time 1: " + time_one;
-  document.getElementById("time_two").innerHTML = "Pontuação Time 2: " + time_two;
+  document.getElementById("time_one").innerHTML = "Time:" + nomeTimeOne + "Pontuação:" + time_one;
+  document.getElementById("time_two").innerHTML = "Time:" + nomeTimeTwo + "Pontuação:" + time_two;
+}
+const addName = (time) => {
+  if (time === "time_one") {
+    nomeTimeOne = document.getElementById("name_one").value;
+    console.log(nomeTimeOne)
+  } else {
+    nomeTimeTwo = document.getElementById("name_two").value;
+  }
 }
 const addOne = (time) => {
   if (time === "time_one") {

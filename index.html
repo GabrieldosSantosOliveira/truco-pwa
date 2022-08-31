@@ -27,6 +27,9 @@
         <button type="reset" class="reset" onclick="reset()">
           Recomeçar Partida
         </button>
+        <label for="name_one">Nome do Time</label>
+        <input id="name_one" placeholder="time1" type="text" />
+        <button onclick="addName('time_one')">Confirmar</button>
       </div>
       <div class="time_2">
         <div id="time_two"></div>
@@ -38,6 +41,9 @@
         <button class="button" onclick="Vencedor('time_two',addTwelve)">
           +12
         </button>
+        <label for="name_two">Nome do Time</label>
+        <input id="name_two" placeholder="time1" type="text" />
+        <button onclick="addName('time_two')">Confirmar</button>
       </div>
       <footer class="footer">Todos os direitos reservados</footer>
     </div>
