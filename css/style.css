@@ -1,0 +1,77 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 70px calc(100vh - 120px) 50px;
+  grid-template-areas:
+    "header header"
+    "time_1 time_2"
+    "footer footer";
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 50vh 50vh 50px;
+    grid-template-areas:
+      "header"
+      "time_1"
+      "time_2"
+      "footer";
+  }
+}
+
+.footer {
+  grid-area: footer;
+  background-color: chocolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  grid-area: header;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.time_1 {
+  grid-area: time_1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.time_2 {
+  grid-area: time_2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 3rem;
+  border-radius: 5px;
+  margin: 5px;
+}
+.reset {
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 3rem;
+  border-radius: 5px;
+  margin: 5px;
+}

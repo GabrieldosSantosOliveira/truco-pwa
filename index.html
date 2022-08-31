@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="white" />
+    <link rel="apple-touch-icon" href="images/pwa-icon-256.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="icon" href="images/pwa-icon-256.png" />
+    <title>IMC-PWA</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">Truco money, Jogue com seus amigos</header>
+      <div class="time_1">
+        <div id="time_one"></div>
+        <button class="button" onclick="Vencedor('time_one',addOne)">+1</button>
+        <button class="button" onclick="Vencedor('time_one',addThree)">
+          +3
+        </button>
+        <button class="button" onclick="Vencedor('time_one',addSix)">+6</button>
+        <button class="button" onclick="Vencedor('time_one',addTwelve)">
+          +12
+        </button>
+        <button type="reset" class="reset" onclick="reset()">
+          Recomeçar Partida
+        </button>
+      </div>
+      <div class="time_2">
+        <div id="time_two"></div>
+        <button class="button" onclick="Vencedor('time_two',addOne)">+1</button>
+        <button class="button" onclick="Vencedor('time_two',addThree)">
+          +3
+        </button>
+        <button class="button" onclick="Vencedor('time_two',addSix)">+6</button>
+        <button class="button" onclick="Vencedor('time_two',addTwelve)">
+          +12
+        </button>
+      </div>
+      <footer class="footer">Todos os direitos reservados</footer>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
