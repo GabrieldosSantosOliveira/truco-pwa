@@ -6,6 +6,8 @@ window.onload = () => {
 };
 let time_one = 0;
 let time_two = 0;
+let pontosOne = 0;
+let pontosTwo = 0;
 let nomeTimeOne = "";
 let nomeTimeTwo = "";
 const view = () => {
@@ -38,6 +40,7 @@ const addThree = (time) => {
 }
 const addSix = (time) => {
   if (time === "time_one") {
+
     time_one += 6;
   } else {
     time_two += 6;
@@ -59,12 +62,17 @@ const reset = () => {
 const Vencedor = (time, func) => {
   if (time === "time_one") {
     if (time_one >= 12) {
+      pontosOne++;
+      document.getElementById("pontos_one").innerHTML = "Partidas Vencidas: " + pontosOne;
+
       alert("Time 1 Venceu!")
     } else {
       func("time_one")
     }
   } else {
     if (time_two >= 12) {
+      pontosTwo++;
+      document.getElementById("pontos_two").innerHTML = "Partidas Vencidas: " + pontosTwo;
       alert("Time 2 Venceu!")
     } else {
       func('time_two')
