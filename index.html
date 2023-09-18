@@ -2,6 +2,9 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <meta name="theme-color" content="white" />
     <link rel="apple-touch-icon" href="images/pwa-icon-256.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,43 +16,86 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">Truco money, Jogue com seus amigos</header>
+      <header class="header">
+        <h1 class="heading">
+        Contador de truco
+        </h1>
+      </header>
       <div class="time_1">
-        <div id="time_one"></div>
-        <div id="pontos_one"></div>
+        <div id="pontos_one" class="pontos"></div>
+        <div id="time_one" class="time"></div>
+      <div class="container_box">
+        <button class="box" onclick="Vencedor('time_one',addOne)">
+        <span class="box_text">
+          +1
+        </span>
+        </button>
+        <button class="box" onclick="Vencedor('time_one',addThree)">
+          <span class="box_text">
 
-        <button class="button" onclick="Vencedor('time_one',addOne)">+1</button>
-        <button class="button" onclick="Vencedor('time_one',addThree)">
           +3
+</span>
         </button>
-        <button class="button" onclick="Vencedor('time_one',addSix)">+6</button>
-        <button class="button" onclick="Vencedor('time_one',addTwelve)">
+        <button class="box" onclick="Vencedor('time_one',addSix)">
+          <span class="box_text">
+            +6
+          </span>
+          </button>
+        <button class="box" onclick="Vencedor('time_one',addTwelve)">
+          <span class="box_text">
+
           +12
+</span>
         </button>
-        <button type="reset" class="reset" onclick="reset()">
-          Recomeçar Partida
+        </div>
+        <button type="reset" class="button_reset" onclick="reset()">
+          Zerar
         </button>
         <label for="name_one">Nome do Time</label>
-        <input id="name_one" placeholder="time1" type="text" />
+        <input id="name_one" placeholder="time1" type="text" class="input" />
         <button onclick="addName('time_one')">Confirmar</button>
       </div>
       <div class="time_2">
-        <div id="time_two"></div>
-        <div id="pontos_two"></div>
+        <div id="pontos_two" class="pontos"></div>
+        <div id="time_two" class="time"></div>
+        <div class="container_box">
 
-        <button class="button" onclick="Vencedor('time_two',addOne)">+1</button>
-        <button class="button" onclick="Vencedor('time_two',addThree)">
+        <button class="box" onclick="Vencedor('time_two',addOne)">
+          <span class="box_text">
+            +1
+          </span>
+          </button>
+        <button class="box" onclick="Vencedor('time_two',addThree)">
+          <span class="box_text">
+
           +3
+</span>
+
         </button>
-        <button class="button" onclick="Vencedor('time_two',addSix)">+6</button>
-        <button class="button" onclick="Vencedor('time_two',addTwelve)">
+        <button class="box" onclick="Vencedor('time_two',addSix)">
+          <span class="box_text">
+            +6
+          </span>
+        </button>
+        <button class="box" onclick="Vencedor('time_two',addTwelve)">
+          <span class="box_text">
+
           +12
+</span>
+        </button>
+        </div>
+        <button type="reset" class="button_reset" onclick="reset()">
+          Zerar
         </button>
         <label for="name_two">Nome do Time</label>
-        <input id="name_two" placeholder="time1" type="text" />
+        <input id="name_two" placeholder="time1" type="text" class="input" />
         <button onclick="addName('time_two')">Confirmar</button>
       </div>
-      <footer class="footer">Todos os direitos reservados</footer>
+      <footer class="footer">
+        <span class="text_footer">
+          Developed by Gabriel dos Santos Oliveira
+      </span>
+      </footer>
     </div>
     <script src="./js/main.js"></script>
   </body>

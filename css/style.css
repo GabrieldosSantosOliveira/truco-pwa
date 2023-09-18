@@ -1,4 +1,5 @@
 .container {
+  background-color: #DCDCE5;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 70px calc(100vh - 120px) 50px;
@@ -6,6 +7,33 @@
     "header header"
     "time_1 time_2"
     "footer footer";
+}
+.input{
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: .5rem;
+  outline: none;
+  border: none;
+  padding: 0 1rem ;
+  font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
+}
+.header {
+  grid-area: header;
+  background-color: Orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading{
+  color: var(--white, #FFF);
+text-align: center;
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
 }
 @media only screen and (max-width: 600px) {
   .container {
@@ -21,17 +49,17 @@
 
 .footer {
   grid-area: footer;
-  background-color: chocolate;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.header {
-  grid-area: header;
-  background-color: blueviolet;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.text_footer{
+color: var(--Orange, #FF872C);
+text-align: center;
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
 }
 .time_1 {
   grid-area: time_1;
@@ -40,6 +68,9 @@
   gap: 5px;
   justify-content: center;
   flex-direction: column;
+  border-right: 1px;
+  border-right-color: #FF872C;
+  border-right-style: solid;
 }
 .time_2 {
   grid-area: time_2;
@@ -49,19 +80,23 @@
   align-items: center;
   justify-content: center;
 }
-.button {
-  background-color: #4caf50;
+.box {
+  width: 4.5208125rem;
+  height: 4.375rem;
+  background-color: var(--Orange, #FF872C);
   border: none;
-  color: white;
-  font-size: 16px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 6rem;
-  height: 3rem;
-  border-radius: 5px;
-  margin: 5px;
+  border-radius: 1.25rem;
+}
+.box_text{
+color: var(--white, #FFF);
+text-align: center;
+font-family: Poppins;
+font-size: 1.875rem;
+font-weight: 700;
 }
 .reset {
   background-color: red;
@@ -76,4 +111,41 @@
   height: 3rem;
   border-radius: 5px;
   margin: 5px;
+}
+.pontos{
+  color: var(--Orange, #FF872C);
+text-align: center;
+font-family: Poppins;
+font-size: 4.375rem;
+font-style: normal;
+font-weight: 700;
+}
+.time{
+  color: var(--Orange, #FF872C);
+text-align: center;
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
+}
+.container_box{
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.button_reset{
+  width:9.6875rem;
+height: 4.375rem;
+border-radius: 1.25rem;
+background: var(--Orange, #FF872C);
+border: none;
+color: var(--white, #FFF);
+text-align: center;
+font-family: Poppins;
+font-size: 1.875rem;
+font-style: normal;
+font-weight: 700;
 }
