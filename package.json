@@ -7,8 +7,8 @@
     "dev": "serve ."
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Gabriel dos Santos Oliveira <gabrielsantosoliveira951@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "serve": "^14.0.1"
   }
