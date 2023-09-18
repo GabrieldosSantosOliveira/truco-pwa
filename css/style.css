@@ -35,15 +35,32 @@ font-size: 1rem;
 font-style: normal;
 font-weight: 700;
 }
-@media only screen and (max-width: 600px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 70px 50vh 50vh 50px;
-    grid-template-areas:
-      "header"
-      "time_1"
-      "time_2"
-      "footer";
+.container_box{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+@media  (min-width: 515px) {
+  .container_box{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media  (min-width: 900px) {
+  .container_box{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -128,14 +145,7 @@ font-size: 1rem;
 font-style: normal;
 font-weight: 700;
 }
-.container_box{
-  width: 30%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-}
+
 .button_reset{
   width:9.6875rem;
 height: 4.375rem;
@@ -148,4 +158,27 @@ font-family: Poppins;
 font-size: 1.875rem;
 font-style: normal;
 font-weight: 700;
+cursor: pointer;
+}
+.input_label{
+  color: #FF872C;
+text-align: center;
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
+}
+.button_confirm{
+  width: 10rem;
+  height: 3rem;
+  border-radius: .5rem;
+  background: var(--Orange, #FF872C);
+  border: none;
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
 }

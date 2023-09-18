@@ -1,9 +1,9 @@
-// window.onload = () => {
-//   "use strict";
-//   if ("serviceWorker" in navigator) {
-//     navigator.serviceWorker.register("./sw.js");
-//   }
-// };
+window.onload = () => {
+  "use strict";
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./sw.js");
+  }
+};
 let time_one = 0;
 let time_two = 0;
 let pontosOne = 0;
